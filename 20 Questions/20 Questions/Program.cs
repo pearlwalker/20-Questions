@@ -1,4 +1,12 @@
-﻿namespace _20_Questions
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.IO;
+using System.Runtime.Serialization;
+using System.Runtime.Serialization.Formatters.Binary;
+
+namespace _20_Questions
 {
     internal class Program
     {
@@ -33,7 +41,7 @@
         {
             Console.Write("\nPlay Another Game?");
             char inputCharacter = Console.ReadLine().ElementAt(0);
-            inputCharacter = Char.ToLower(inputCharacter); //could implement this back in the TreeNode.cs
+            inputCharacter = Char.ToLower(inputCharacter); 
             while (inputCharacter != 'y' && inputCharacter != 'n')
             {
                 Console.WriteLine("Incorrect input please enter again: ");

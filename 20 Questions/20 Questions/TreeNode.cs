@@ -59,10 +59,23 @@ using System.Text.Json.Serialization;
 		if (noNode == null && yesNode == null)
 		{
 			return false;
-		} else
+		} 
+		else
 		{
 			return true;
 		}
+	}
+
+	//asks a user for yes or no
+	private char getYesOrNo()
+	{
+		char inputCharacter = ' ';
+		while (inputCharacter != 'y' && inputCharacter != 'n')
+		{
+			inputCharacter = Console.ReadLine().ElementAt(0);
+			inputCharacter = Char.ToLower(inputCharacter);
+		}
+		return inputCharacter;
 	}
 
 	/*
@@ -73,10 +86,9 @@ using System.Text.Json.Serialization;
 		if (this.isQuestion())
 		{
 			Console.WriteLine(this.message);
-			Console.Write("enter 'yes' for yes and 'no' for no: ");
-			string input = Console.ReadLine();
-			//char input = getYesOrNo();
-			if (input == "yes")
+			Console.Write("Enter 'yes' for yes and 'no' for no: ");
+			char input = getYesOrNo();
+			if (input == 'y')
 			{
 				yesNode.query();
 			} else
@@ -92,9 +104,9 @@ using System.Text.Json.Serialization;
 	public void onQueryObject()
 	{
 		Console.WriteLine("Are you thinking of a(n) " + this.message + "?");
-		Console.Write("Enter 'yes' for yes and 'no' for no: ");
-		string input = Console.ReadLine();
-		if (input == "yes")
+		Console.Write("Enter 'y' for yes and 'n' for no: ");
+        char input = getYesOrNo();
+        if (input == 'y')
 		{
 			Console.WriteLine("The Computer Wins\n");
 		} else
@@ -110,8 +122,8 @@ using System.Text.Json.Serialization;
 		Console.Write("Please enter a question to distinguish a(n) " + this.message + " from " + userObject + ": ");
 		string userQuestion = Console.ReadLine();
 		Console.Write("If you were thinking of a(n) " + userObject + ", what would the answer to that question be?");
-		string input = Console.ReadLine();
-		if (input == "yes")
+        char input = getYesOrNo();
+        if (input == 'y')
 		{
 			this.noNode = new TreeNode(this.message);
 			this.yesNode = new TreeNode(userObject);
