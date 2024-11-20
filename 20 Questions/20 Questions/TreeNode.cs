@@ -72,7 +72,7 @@ public class TreeNode
 		if (this.isQuestion())
 		{
 			Console.WriteLine(this.message);
-			Console.Write("enter 'yes' for yes and 'no' for no: ");\
+			Console.Write("enter 'yes' for yes and 'no' for no: ");
 			string input = Console.ReadLine();
 			//char input = getYesOrNo();
 			if (input == "yes")
