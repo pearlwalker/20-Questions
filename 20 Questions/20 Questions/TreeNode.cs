@@ -2,9 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.Json.Serialization;
 
 
-public class TreeNode
+[Serializable] class TreeNode
 {
 	string message; //holds the question or answer
 	TreeNode yesNode; //reference to node if user enters no
@@ -19,19 +20,19 @@ public class TreeNode
 	}
 
 	//mutator methods
-	public void setMessage(string nodeData)
+	public void setMessage(string nodeMessage)
 	{
-		message = nodeData;
+		message = nodeMessage;
 	}
 
-	public string getData()
+	public string getMessage()
 	{
 		return message;
 	}
 
 	public void setNoNode(TreeNode node)
 	{
-		noNode = node.noNode;
+		noNode = node;
 	}
 
 	public TreeNode getNoNode()
