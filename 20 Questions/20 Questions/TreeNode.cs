@@ -19,7 +19,7 @@ public class TreeNode
 	}
 
 	//mutator methods
-	public void setData(string nodeData)
+	public void setMessage(string nodeData)
 	{
 		message = nodeData;
 	}
@@ -118,7 +118,9 @@ public class TreeNode
 		{
 			this.yesNode = new TreeNode(this.message);
 			this.noNode = new TreeNode(userObject);
-		}
+		};
+		Console.WriteLine("Thank you my knowledge has been increased");
+		this.setMessage(userQuestion);
 	}
 
 }
