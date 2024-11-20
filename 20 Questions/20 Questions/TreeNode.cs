@@ -72,9 +72,10 @@ public class TreeNode
 		if (this.isQuestion())
 		{
 			Console.WriteLine(this.message);
-			Console.Write("enter 'y' for yes and 'n' for no: ");
-			char input = getYesOrNo();
-			if (input == 'y')
+			Console.Write("enter 'yes' for yes and 'no' for no: ");\
+			string input = Console.ReadLine();
+			//char input = getYesOrNo();
+			if (input == "yes")
 			{
 				yesNode.query();
 			} else
@@ -90,9 +91,9 @@ public class TreeNode
 	public void onQueryObject()
 	{
 		Console.WriteLine("Are you thinking of a(n) " + this.message + "?");
-		Console.Write("Enter 'y' for yes and 'n' for no: ");
-		char input = getYesOrNo();
-		if (input == 'y')
+		Console.Write("Enter 'yes' for yes and 'no' for no: ");
+		string input = Console.ReadLine();
+		if (input == "yes")
 		{
 			Console.WriteLine("The Computer Wins\n");
 		} else
@@ -108,8 +109,8 @@ public class TreeNode
 		Console.Write("Please enter a question to distinguish a(n) " + this.message + " from " + userObject + ": ");
 		string userQuestion = Console.ReadLine();
 		Console.Write("If you were thinking of a(n) " + userObject + ", what would the answer to that question be?");
-		char input = getYesOrNo();
-		if (input == 'y')
+		string input = Console.ReadLine();
+		if (input == "yes")
 		{
 			this.noNode = new TreeNode(this.message);
 			this.yesNode = new TreeNode(userObject);
