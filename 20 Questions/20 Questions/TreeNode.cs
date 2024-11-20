@@ -2,26 +2,27 @@
 
 public class TreeNode
 {
-	string data; //holds the question or answer
+	string message; //holds the question or answer
 	TreeNode yesNode; //reference to node if user enters no
 	TreeNode noNode; //reference to node user enters yes
 
 	//represents each node in the question tree
-	public TreeNode(string newData, TreeNode newYes, TreeNode newNo)
+	public TreeNode(string nodeMessage)
 	{
-		data = newData;
-		yesNode = newYes;
-		noNode = newNo;
+		message = nodeMessage;
+		yesNode = null;
+		noNode = null;
 	}
 
+	//mutator methods
 	public void setData(string nodeData)
 	{
-		data = nodeData;
+		message = nodeData;
 	}
 
 	public string getData()
 	{
-		return data;
+		return message;
 	}
 
 	public void setNoNode(TreeNode node)
@@ -43,4 +44,6 @@ public class TreeNode
 	{
 		return yesNode;
 	}
+
+	//
 }
