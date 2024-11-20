@@ -45,5 +45,20 @@ public class TreeNode
 		return yesNode;
 	}
 
-	//
+    /*
+ * Notes:
+ *	When a node has two null references the computer has no more questions and the computer is ready to make a guess.
+ *	The following method will check to see if a node is a leaf node and it will be used later when progressing through the binary trees. - https://www.c-sharpcorner.com/UploadFile/4a950c/20-questions-guessing-game-using-binary-trees/
+ */
+	public bool isQuestion()
+	{
+		if (noNode == null && yesNode == null)
+		{
+			return false;
+		} else
+		{
+			return true;
+		}
+	}
+
 }
