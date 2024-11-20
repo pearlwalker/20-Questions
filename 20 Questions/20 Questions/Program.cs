@@ -13,6 +13,8 @@ namespace _20_Questions
         static Tree tree;
         static void Main(string[] args)
         {
+            //hard code start of tree(?)
+            //call tree.query()(?)
             startNewGame();
             Console.WriteLine("\nStarting the Game");
             tree.query();
