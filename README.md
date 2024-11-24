@@ -11,13 +11,13 @@ When the program loses, it learns by asking the player about their country. You 
 
 ## Collaborators
 **Mariana Espinal**:
-- ***Designed*** and ***Developed*** the outline of the program in C#
+***Designed*** and ***Developed*** the outline of the program in C#
 
 **Olivia Gauthier**: 
-- ***Designed*** and ***Developed*** the outline of the program in C#
+***Designed*** and ***Developed*** the outline of the program in C#
   
 **Jayson Packer**: 
-- ***Implemented*** tree into C# program. 
+***Implemented*** tree into C# program. 
 
 **Pearl Walker**: 
-- ***Researched*** ~235 different countries, marking specific parameters. ***Graphed*** data in Sheets. ***Designed*** questions for tree outline based on data. ***Structured*** GitHub repository. ***Wrote*** project description. 
+***Researched*** ~235 different countries, marking specific parameters. ***Graphed*** data in Sheets. ***Designed*** questions for tree outline based on data. ***Structured*** GitHub repository. ***Wrote*** project description. 
