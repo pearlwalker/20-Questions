@@ -6,10 +6,8 @@ Inspired by 20 Questions, this geographical guessing game might just teach you a
 
 **Tech used:** C#, Visual Studio, Google Workspace (Docs/Sheets)
 
-**How to play:**
-
-**You** (*the player*) choose a country.
-**The Guesser** (*the program*) tries to guess your country by asking a series of yes-no questions.
+**How to play:** 
+**You** (*the player*) choose a country. **The Guesser** (*the program*) tries to guess your country by asking a series of yes-no questions.
   - If the program guesses the right country, the player loses. 
   - If the program guesses the wrong country, the player wins.
 
