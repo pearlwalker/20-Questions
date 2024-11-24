@@ -25,11 +25,11 @@ public class Tree
 		rootNode.query();
 	}
 
-	private void loadTree()
+	public void loadTree()
 	{
 		
         // make a stream reader object out of it
-        StreamReader sr = new StreamReader(".\tree.txt");
+        StreamReader sr = new StreamReader("tree.txt");
 		string line = sr.ReadLine();
 		while (line != null) {
 		string[] parts = line.Split(",");
@@ -78,7 +78,7 @@ public class Tree
     }
 	public void printTree()
 	{
-        StreamWriter sw = new StreamWriter(".\tree.txt", true);
+        StreamWriter sw = new StreamWriter("tree.txt", true);
         rootNode.printNode(sw);
         sw.Close();
     }
