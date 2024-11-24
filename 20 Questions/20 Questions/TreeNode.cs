@@ -10,14 +10,19 @@ using System.Text.Json.Serialization;
 	string message; //holds the question or answer
 	TreeNode yesNode; //reference to node if user enters no
 	TreeNode noNode; //reference to node user enters yes
-
+	string parentName;
+	string edgeType;
+	string name;
 	//represents each node in the question tree
-	public TreeNode(string nodeMessage)
+	public TreeNode(string nodeMessage, string parent, string edge, string nodeName)
 	{
+		edgeType = edge;
 		message = nodeMessage;
+		parentName = parent;
 		yesNode = null;
 		noNode = null;
-	}
+		name = nodeName;
+	}	
 
 	//mutator methods
 	public void setMessage(string nodeMessage)
@@ -134,6 +139,23 @@ using System.Text.Json.Serialization;
 		};
 		Console.WriteLine("Thank you my knowledge has been increased");
 		this.setMessage(userQuestion);
+	}
+	/// <summary>
+	/// Recursivly print outs all of the nodes in the tree starting with the root node then yes nodes to no nodes
+	/// </summary>
+	/// <param name="sw"> Is a string writer object</param>
+	public void printNode(StreamWriter sw)
+	{
+		sw.WriteLine($"{name},{message},{parentName},{edgeType}");
+		if (yesNode != null)
+		{
+			yesNode.printNode(sw);
+		}
+
+		if (this.noNode != null)
+		{
+			noNode.printNode(sw);
+		}
 	}
 
 }
