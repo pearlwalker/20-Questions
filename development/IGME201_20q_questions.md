@@ -4,49 +4,82 @@ Is your country in Eurasia? [is: #n0a]
   - No: Does your country have a population greater than 50 million people? [is: #na1b, from: #n0a]
     - Yes: [see below]
     - No: Does your country have a population greater than 25 million people? [is: #na1c, from: #na1b]
+      - Yes: [see below]
+      - No: Does your country have a population greater than 1.1 million people? [is: #na1d, from #na1c]
+        - Yes: [see below] #na1d
+        - No: [see below] #na1e
+  - No: Is your country in Africa? [is: #n0b, from #n0a]
+    - Yes: Does your country have a population greater than 100 million people? [is: #nb1a, from: #n0b]
+      - Yes: [see below]
+      - No: Does your country have a population greater than 50 million people? [is: #nb1b, from: #n0b]
+        - Yes: [see below]
+        - No: Does your country have a population greater than 25 million people? [is: #nb1c, from: #nb1b]
+          - Yes: [see below]
+          - No: Does your country have a population greater than 1.1 million people? [is: #nb1d, from #nb1c]
+            - Yes: [see below] #nb1d
+            - No: [see below] #nb1e
+    - No: Is your country in the Americas? [is: #n0c, from #n0b]
+      - Yes: Does your country have a population greater than 100 million people? [is: #nc1a, from: #n0c]
+        - Yes: [see below]
+        - No: Does your country have a population greater than 50 million people? [is: #cb1b, from: #n0c]
+          - Yes: [see below]
+          - No: Does your country have a population greater than 25 million people? [is: #nc1c, from: #nc1b]
+            - Yes: [see below]
+            - No: Does your country have a population greater than 1.1 million people? [is: #nc1d, from #nc1c]
+              - Yes: [see below] #nc1d
+              - No: [see below] #nc1e
+        - No: Is your country in Oceania? [is: #n0d, from #n0c]
+          - Yes: Does your country have a population greater than 100 million people? [is: #nd1a, from: #n0d]
+            - Yes: [see below]
+              - No: Does your country have a population greater than 25 million people? [is: #nd1b, from: #nd1a]
+                - Yes: [see below]
+                - No: Does your country have a population greater than 1.1 million people? [is: #nd1c, from #nd1b]
+                  - Yes: [see below] #nb1c
+                  - No: [see below] #nb1d
+          - No: **Is it Anartica?** [is: #n0e, from #n0d] [is: #n, from: #n]
 
 ### If Country is in Eurasia
 ## FROM #na1a
   - Is its national animal a mythical creature?  [is: #naa_mc, from: #na1a]
-    - Yes: **Is it Russia?**   [is: #naa_mc1 , from: #naa_mc]
+    - Yes: **Is it Russia?**   [is: #naa_mc1, from: #naa_mc]
     - No: Is its national animal a tiger?  [is: #naa_mc0 , from: #naa_mc]
-      - Yes: Is it one of the 17 “megadiverse” countries? [is: # , from: #naa_mc0]  
-        - Yes: **Is it India?**  
-        - No: **Is it Bangladesh?**  
-      - No: Is it one of the 17 “megadiverse” countries?  [is: # , from: #naa_mc0]
-        - Yes: **Is it China?**  
-        - No: Does this country have recognized glaciers?  
-          - Yes: But does it have…like a lot of glaciers?  
-            - Yes: **Is it Pakistan?**  
-            - No: **Is it  Japan?**  
-          - No: **Is it Vietnam?**  
+      - Yes: Is it one of the 17 “megadiverse” countries? [is: #naa_tiger1, from: #naa_mc0]  
+        - Yes: **Is it India?**  [is: #naa_171, from: #naa_tiger1]
+        - No: **Is it Bangladesh?**  [is: #naa_170, from: #naa_tiger1]
+      - No: Is it one of the 17 “megadiverse” countries?  [is: # naa_tiger0, from: #naa_mc0]
+        - Yes: **Is it China?**  [is: #naa_171, from: #naa_tiger0]
+        - No: Does this country have recognized glaciers?  [is: #naa_170, from: #naa_tiger0]
+          - Yes: But does it have…like a lot of glaciers?  [is: #naa_glacier1, from: #naa_170]
+            - Yes: **Is it Pakistan?**  [is: #naa_glaciers1, from: #naa_glacier1]
+            - No: **Is it  Japan?**  [is: #naa_glaciers0, from: #naa_glacier1]
+          - No: **Is it Vietnam?**  [is: #naa_glacier0, from: #naa_170]
 ##  FROM #na1b
-  - Is its national animal a mythical creature?  [is: #, from: #na1b]
-    - Yes: But like…is it actually that country’s national animal, or is it the national animal of a country within that country?  
-      - Yes: **Is it Germany?**  
-      - No: **Is it the United Kingdom (England/Scotland/Wales/Northern Ireland)**   
-    - No: Is there one of the cardinal directions (North/East/South/West) in the name of this country?   
-      - Yes: Did this country operate under Apartheid?  
-        - Yes: **Is it South Africa?**  
-        - No: **Is it South Korea?**  
-      - No: **Is it Iran?**  
+  - Is its national animal a mythical creature?  [is: #nab_mc, from: #na1b]
+    - Yes: But like…is it actually that country’s national animal or is it the national animal of a country within that country?  [is: #nab_mc1, from: #nab_mc]
+      - Yes: **Is it Germany?**  [is: #nab_mcfr1, from: #nab_mc1]
+      - No: **Is it the United Kingdom (England/Scotland/Wales/Northern Ireland)** [is: #nab_mcfr0, from: #nab_mc1]   
+    - No: Is there one of the cardinal directions (North/East/South/West) in the name of this country?   [is: #nab_mc0, from: #nab_mc]
+      - Yes: Did this country operate under Apartheid?  [is: #nab_NESW1, from: #nab_mc0]
+        - Yes: **Is it South Africa?**  [is: #nab_apartheid1, from: #nab_NESW1]
+        - No: **Is it South Korea?**  [is: #nab_apartheid0, from: #nab_NESW1]
+      - No: **Is it Iran?**  [is: #nab_NESW0, from: #nab_mc0]
 ## FROM #na1c
-  - Is it landlocked?  [is: #, from: #na1c]
-    - Yes: Is it “doubly landlocked?”  
-      - Yes: **Is it Uzbekistan?**  
-      - No: Does its flag have a non-rectangular shape?  
-        - Yes: **Is it Nepal?**  
-        - No: **Is it Afghanistan?**  
-    - No: Is its national animal a mythical creature?  
-      - Yes: **Is it North Korea?**  
-      - No: Is it one of the 17 “megadiverse” countries?  
-        - Yes: **Is it Malaysia?**  
-        - No: **Is it Iraq?**
+  - Is it landlocked?  [is: #nac_LL, from: #na1c]
+    - Yes: Is it “doubly landlocked?” [is: #nac_LL1, from: #nac_LL] 
+      - Yes: **Is it Uzbekistan?**  [is: #nac_2LL1, from: #nac_LL1]
+      - No: Does its flag have a non-rectangular shape?  [is: #nac_2LL0, from: #nac_LL1]
+        - Yes: **Is it Nepal?**  [is: #nac_weirdflag1, from: #nac_2LL0]
+        - No: **Is it Afghanistan?**  [is: #nac_weirdflag0, from: #nac_2LL0]
+    - No: Is its national animal a mythical creature? [is: #nac_LL0, from: #nac_LL]  
+      - Yes: **Is it North Korea?**   [is: #nac_mc1, from: #nac_LL]
+      - No: Is it one of the 17 “megadiverse” countries?  [is: #nac_mc0, from: #nac_LL]
+        - Yes: **Is it Malaysia?**  [is: #nac_171, from: #nac_mc0]
+        - No: **Is it Iraq?** [is: #nac_170, from: #nac_mc1]
 
 ## FROM #na1d
-  - Is it landlocked? [is: #, from: #na1d]
-    - Yes: Is its national animal a mythical creature?   
-      - Yes: Does it have a rainforest?  
+  - Is it landlocked? [is: #nad_LL, from: #na1d]
+    - Yes: Is its national animal a mythical creature? [is: #nad_LL1, from: #nad_LL]   
+      - Yes: Does it have a rainforest?  [is: #n, from: #nad_LL1]
         - Yes: **Is it Serbia?**  
         - No: Is it home to the world’s LARGEST ice cave ?  
           - Yes: **Is it Austria?**  
@@ -74,7 +107,7 @@ Is your country in Eurasia? [is: #n0a]
           - Yes: **Is it Andorra?**  [is: #nae_catalan1, from: #nae_mc0]
           - No: Is there anything…unusual about the shape of its flag?  [is: #nae_catalan0, from: #nae_mc0]
             - Yes: **Is it Vatican City/Holy See?**  [is: #nae_weirdflag1, from: #nae_catalan0]
-            - No: According to the Köppen climate classification, does this country have an oceanic climate? [is: #nae_weirdflad0, from: #nae_catalan0]  [is: #n, from: #n]
+            - No: According to the Köppen climate classification, does this country have an oceanic climate? [is: #nae_weirdflad0, from: #nae_catalan0]  
               - Yes: **Is it Luxembourg?**  [is: #nae_oceanic1, from: #nae_weirdflag0]
               - No: **Is it San Marino?**  [is: #nae_oceanic0, from: #nae_weirdflag0]
     - No: Does the name of this country begin with the letter ‘M’?  [is: #nae_LL0, from: #nae_LL]
