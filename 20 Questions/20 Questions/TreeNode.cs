@@ -146,7 +146,7 @@ using System.Text.Json.Serialization;
 	/// <param name="sw"> Is a string writer object</param>
 	public void printNode(StreamWriter sw)
 	{
-		sw.WriteLine($"{this.name},{this.message},{this.parentName},{this.edgeType}");
+		sw.WriteLine($"{this.message},{this.name},{this.parentName},{this.edgeType}");
 		if (yesNode != null)
 		{
 			yesNode.printNode(sw);

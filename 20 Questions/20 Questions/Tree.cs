@@ -33,8 +33,8 @@ public class Tree
 		string line = sr.ReadLine();
 		while (line != null) {
 		string[] parts = line.Split(",");
-		string name= parts[0];
-		string message = parts.Length>1 ? parts[1]: null;
+		string message= parts[0];
+		string name = parts.Length>1 ? parts[1]: null;
 		string parent = parts.Length > 2 ? parts[2]: null;
 		string edgeType = parts.Length > 3 ? parts[3]: null;
 			// if parent node is null set rootnode
@@ -72,7 +72,7 @@ public class Tree
         }
         
     }
-
+		
 	public void removeNode(string name)
     {
     }
