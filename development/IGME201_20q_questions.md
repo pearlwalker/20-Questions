@@ -81,8 +81,7 @@ Is your country in Eurasia? [is: #n0a]
       - Yes: **Is it Maldives?**  
       - No: **Is it Iceland?**
 
-## If Country is in Africa 
-
+### If Country is in Africa 
 ## FROM #nb1a  
   - Is it landlocked?  
     - Yes: **Is it Ethiopia?**  
@@ -106,45 +105,45 @@ Is your country in Eurasia? [is: #n0a]
 ## FROM #nb1e
   - **Is it Western Sahara?**
 
-## If Country is in America
-
-- AND population \>100mil (3)  
-  - Does its flag have stars on it?  
-    - Yes: Does its flag have more than 3 colors on it?   
-      - Yes: **Is it Brazil?**  
-      - No: **Is it the United States**  
-    - No: **Is it Mexico?**  
-- AND population \>50mil (1)  
-  - **Is it Colombia?**  
-- AND population \>25mil (4)  
-  - Is it one of the 17 “megadiverse” countries?  
-    - Yes: Is this country known for its record-setting waterfall?  
-      - Yes: **Is it Venezuela?**  
-      - No: **Is it Peru?**  
-    - No: Is its national animal a beaver?  
-      - Yes: **Is it Canada?**  
-      - No: **Is it Argentina?**  
-- AND population \>1.1mil (17)  
-  - Yes: Does this country have more than one capital?  
-    - Yes: **Is it Bolivia?**  
-    - No: **Is it Paraguay?**  
-  - No: Is it one of the 17 “megadiverse” countries?  
-    - Yes: **Is it Ecuador?**  
-    - No: **Is it Guatemala?**  
-- AND population \<1.1mil (31)  
-  - **Is it Greenland?**
+### If Country is in America
+## FROM #nc1a
+  - Does its flag have stars on it?  [is: #nca_stars, from: #nc1a]
+    - Yes: Does its flag have more than 3 colors on it? [is: #nca_stars1, from: #nca_stars]   
+      - Yes: **Is it Brazil?**  [is: #nca_colors1, from: #nca_stars1]
+      - No: **Is it the United States**  [is: #nca_colors0, from: #nca_stars1]
+    - No: **Is it Mexico?**  [is: #nca_stars0, from: #nca_stars]
+## FROM #nc1b 
+  - **Is it Colombia?**  [is: #ncb_guess, from: #nc1b]
+## FROM #nc1c
+  - Is it one of the 17 “megadiverse” countries?  [is: #ncc_17, from: #nc1c]
+    - Yes: Is this country known for its record-setting waterfall? [is: #ncc_171, from: #ncc_17]  
+      - Yes: **Is it Venezuela?**  [is: #ncc_waterfall1, from: #ncc_171]
+      - No: **Is it Peru?**  [is: #ncc_waterfall0, from: #ncc_171]
+    - No: Is its national animal a beaver?  [is: #ncc_170, from: #ncc_17]
+      - Yes: **Is it Canada?**  [is: #ncc_beaver1, from: #ncc_170]
+      - No: **Is it Argentina?**  [is: #ncc_beaver0, from: #ncc_170]
+## FROM #nc1d
+- Is it landlocked? [is: #ncd_LL, from: #nc1d]
+    - Yes: Does this country have more than one capital?  [is: #ncd_LL1, from: #ncd_LL]
+      - Yes: **Is it Bolivia?**  
+      - No: **Is it Paraguay?**  
+    - No: Is it one of the 17 “megadiverse” countries?  [is: #ncd_LL0, from: #ncd_LL]
+      - Yes: **Is it Ecuador?**  [is: #ncd_171, from: #ncd_LL0]
+      - No: **Is it Guatemala?**  [is: #ncd_170, from: #ncd_LL0]
+## FROM #nc1e
+  - **Is it Greenland?** [is: #nd1e_guess, from: #nd1e]
 
 ## If Country is in Oceania
 
-- AND population \>100mil (2)  
-  - Is its national animal a mythical creature?  
-    - Yes: **Is it Indonesia?**  
-    - No: **Is it the Philippines?**  
-- AND population \>25mil (1)  
-  - **Is it Australia?**  
-- AND population \>1.1mil (2)  
-  - Is it one of the 17 “megadiverse” countries?  
-    - Yes: **Is it Papua New Guinea?**  
-    - No: **Is it New Zealand?**  
-- AND population \<1.1mil (19)  
-  - **Is it Fiji?**
+## FROM #nd1a  
+  - Is its national animal a mythical creature? [is: #nda_mc, from: #nd1a]  
+    - Yes: **Is it Indonesia?**  [is: #nda_mc1, from: #nda_mc][is: #n, from: #n]
+    - No: **Is it the Philippines?**  [is: #nda_mc0, from: #nda_mc] 
+## FROM #nd1b
+  - **Is it Australia?**  [is: #ndb_guess, from: #nd1b]
+## FROM #nd1c
+  - Is it one of the 17 “megadiverse” countries?  [is: #ndc_17, from: #nd1c]
+    - Yes: **Is it Papua New Guinea?**  [is: #ndc_171, from: #ndc_17]
+    - No: **Is it New Zealand?**  [is: #ndc_170, from: #ndc_17]
+## FROM #nd1d
+  - **Is it Fiji?** [is: #ndd_guess, from: #nd1d]
