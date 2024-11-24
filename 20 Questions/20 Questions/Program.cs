@@ -10,7 +10,9 @@ namespace _20_Questions
 {
     internal class Program
     {
-        static Tree tree;
+        static Tree tree ;
+
+
         static void Main(string[] args)
         {
             //hard code start of tree(?)
@@ -57,6 +59,15 @@ namespace _20_Questions
             {
                 return false;
             }
+        }
+
+        static void loadTree()
+        {
+            FileStream userFile = new FileStream("..\tree.txt", FileMode.OpenOrCreate);
+            // make a stream reader object out of it
+            StreamReader sr = new StreamReader(userFile);
+
+
         }
     }
 }
