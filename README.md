@@ -11,7 +11,7 @@ Inspired by 20 Questions, this geographical guessing game might just teach you a
   - Olivia Gauthier
   - Pearl Walker
 
-## How to play:
+**How to play:**
 
 **You** (*the player*) choose a country.
 **The Guesser** (*the program*) tries to guess your country by asking a series of yes-no questions.
