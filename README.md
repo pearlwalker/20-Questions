@@ -1,15 +1,10 @@
 # 20-Questions
 
 ## Description:
-**Tech used:** C#, Visual Studio, Google Workspace (Docs/Sheets)
 
 Inspired by 20 Questions, this geographical guessing game might just teach you a thing or two about the many countries of this world.
 
-**Collaborators:**
-  - Jayson Packer
-  - Mariana Espinal
-  - Olivia Gauthier
-  - Pearl Walker
+**Tech used:** C#, Visual Studio, Google Workspace (Docs/Sheets)
 
 **How to play:**
 
@@ -20,4 +15,8 @@ Inspired by 20 Questions, this geographical guessing game might just teach you a
 
 When the program loses, it learns by asking the player about their country. You can't win the same way twice, so *think carefully*!
 
-
+**Collaborators:**
+  - Jayson Packer
+  - Mariana Espinal
+  - Olivia Gauthier
+  - Pearl Walker
