@@ -36,7 +36,7 @@ Is your country in Eurasia? [is: #n0a]
                 - No: Does your country have a population greater than 1.1 million people? [is: #nd1c, from #nd1b]
                   - Yes: [see below] #nb1c
                   - No: [see below] #nb1d
-          - No: **Is it Anartica?** [is: #n0e, from #n0d] [is: #n, from: #n]
+          - No: **Is it Anartica?** [is: #n0e, from #n0d] 
 
 ### If Country is in Eurasia
 ## FROM #na1a
@@ -74,29 +74,22 @@ Is your country in Eurasia? [is: #n0a]
       - Yes: **Is it North Korea?**   [is: #nac_mc1, from: #nac_LL]
       - No: Is it one of the 17 “megadiverse” countries?  [is: #nac_mc0, from: #nac_LL]
         - Yes: **Is it Malaysia?**  [is: #nac_171, from: #nac_mc0]
-        - No: **Is it Iraq?** [is: #nac_170, from: #nac_mc1]
+        - No: **Is it Iraq?** [is: #nac_170, from: #nac_mc0]
 
-## FROM #na1d
+## FROM #na1d  
   - Is it landlocked? [is: #nad_LL, from: #na1d]
     - Yes: Is its national animal a mythical creature? [is: #nad_LL1, from: #nad_LL]   
-      - Yes: Does it have a rainforest?  [is: #n, from: #nad_LL1]
-        - Yes: **Is it Serbia?**  
-        - No: Is it home to the world’s LARGEST ice cave ?  
-          - Yes: **Is it Austria?**  
-          - No: Is it home to the world’s DEEPEST underwater cave?  
-            - Yes: **Is it Czechia?**  
-            - No: **Is it Hungary?**
-    -  No: Does the name of this country end in \-an?  
-        - Yes: Is it in the Caucasus region?   
-            - Yes: **Is it Azerbaijan?**  
-            - No: **Is it Tajikistan?**  
-        - No: Is there anything…unusual about the shape of its flag?  
-            - Yes: **Is it Switzerland?**   
-            - No: Is its national animal a mythical creature?  
-                - Yes: Is it known for its ancient mythology?  
-                    - Yes: **Is it Greece?**  
-                    - No: **Is it Belgium?**  
-                - No: **Is it Hong Kong?**  
+      - Yes: Is it home to the world’s LARGEST ice cave? [is: #nad_mc1, from: #nad_LL1]  
+        - Yes: **Is it Austria?**   [is: #nad_icecave1, from: #nad_mc1]
+        - No: Is it home to the world’s DEEPEST underwater cave? [is: #nad_icecave0, from: #nad_mc1]
+          - Yes: **Is it Czechia?**  [is: #nad_underwatercave1, from: #nad_icecave0]
+          - No: **Is it Hungary?**[is: #nad_underwatercave0, from: #nad_icecave0]
+      - No: **Is it Serbia?**  [is: #nad_mc0, from: #nad_LL1] 
+    -  No: Does the name of this country end in \-an?  [is: #nad_LL0, from: #nad_LL]   
+        - Yes: Is it in the Caucasus region?   [is: #nad_an1, from: #nad_LL0]   
+            - Yes: **Is it Azerbaijan?**  [is: #nad_caucasus1, from: #nad_an1]   
+            - No: **Is it Tajikistan?**  [is: #nad_caucasus0, from: #nad_an1]   
+        - No: **Is it Hong Kong?** [is: #nad_randomguess, from #nad_LL0] 
 ## FROM  #na1e
   - Is it landlocked?  [is: #nae_LL, from: #na1e]
     - Yes: Is it “doubly landlocked”? [is: #nae_LL1, from: #nae_LL]  
