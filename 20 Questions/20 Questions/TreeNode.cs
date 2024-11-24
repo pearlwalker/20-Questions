@@ -88,17 +88,17 @@ using System.Text.Json.Serialization;
 	 */
 	public void query()
 	{
-		if (this.isQuestion())
+		if (isQuestion())
 		{
-			Console.WriteLine(this.message);
-			Console.Write("Enter 'yes' for yes and 'no' for no: ");
+			Console.WriteLine(message);
+			Console.Write("Enter 'y' for yes and 'n' for no: ");
 			char input = getYesOrNo();
 			if (input == 'y')
 			{
-				yesNode.query();
+                this.yesNode.query();
 			} else
 			{
-				noNode.query();
+                this.noNode.query();
 			}
 		} else
 		{
@@ -130,15 +130,15 @@ using System.Text.Json.Serialization;
         char input = getYesOrNo();
         if (input == 'y')
 		{
-			this.noNode = new TreeNode(this.message);
-			this.yesNode = new TreeNode(userObject);
+			this.noNode = new TreeNode(this.message,this.name,"no",this.name+"no");
+			this.yesNode = new TreeNode(userObject, this.name, "yes", this.name + "yes");
 		} else
 		{
-			this.yesNode = new TreeNode(this.message);
-			this.noNode = new TreeNode(userObject);
+			this.yesNode = new TreeNode(this.message,this.name, "yes", this.name + "yes");
+			this.noNode = new TreeNode(userObject, this.name, "no", this.name + "no");
 		};
 		Console.WriteLine("Thank you my knowledge has been increased");
-		this.setMessage(userQuestion);
+		setMessage(userQuestion);
 	}
 	/// <summary>
 	/// Recursivly print outs all of the nodes in the tree starting with the root node then yes nodes to no nodes
@@ -146,7 +146,7 @@ using System.Text.Json.Serialization;
 	/// <param name="sw"> Is a string writer object</param>
 	public void printNode(StreamWriter sw)
 	{
-		sw.WriteLine($"{name},{message},{parentName},{edgeType}");
+		sw.WriteLine($"{this.name},{this.message},{this.parentName},{this.edgeType}");
 		if (yesNode != null)
 		{
 			yesNode.printNode(sw);

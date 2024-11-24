@@ -10,7 +10,7 @@ namespace _20_Questions
 {
     internal class Program
     {
-        static Tree tree ;
+        static Tree  tree = new Tree();
 
 
         static void Main(string[] args)
@@ -18,9 +18,8 @@ namespace _20_Questions
             //hard code start of tree(?)
             //call tree.query()(?)
             startNewGame();
-            Console.WriteLine("\nStarting the Game");
-            tree.query();
-            while(playAgain())
+            
+            while (playAgain())
             {
                 Console.WriteLine();
                 tree.query();
@@ -30,22 +29,18 @@ namespace _20_Questions
         //When the game starts we need to create a binary tree to hold the computer's knowledge. A new game needs one question and two objects and is executed in the startNewGame() method
         static void startNewGame()
         {
-            Console.WriteLine("No previous knowledge found!");
+            Console.WriteLine("\nStarting the Game");
+            Console.WriteLine("Welcome to 20 questions Countries!");
             Console.WriteLine("Initializing a new game.\n");
-            Console.WriteLine("Enter a question about an object: ");
-            string question = Console.ReadLine();
-            Console.Write("Enter a guess if the response is Yes: ");
-            string yesGuess = Console.ReadLine();
-            Console.Write("Enter a guess if the response is No: ");
-            string noGuess = Console.ReadLine();
-            tree = new Tree(question, yesGuess, noGuess);
+            Console.WriteLine("Think about a country and we'll try to guess it: ");
+            tree.query();
         }
 
         static bool playAgain()
         {
             Console.Write("\nPlay Another Game?");
             char inputCharacter = Console.ReadLine().ElementAt(0);
-            inputCharacter = Char.ToLower(inputCharacter); 
+            inputCharacter = Char.ToLower(inputCharacter);
             while (inputCharacter != 'y' && inputCharacter != 'n')
             {
                 Console.WriteLine("Incorrect input please enter again: ");
@@ -55,19 +50,13 @@ namespace _20_Questions
             if (inputCharacter == 'y')
             {
                 return true;
-            } else
+            }
+            else
             {
                 return false;
             }
         }
 
-        static void loadTree()
-        {
-            FileStream userFile = new FileStream("..\tree.txt", FileMode.OpenOrCreate);
-            // make a stream reader object out of it
-            StreamReader sr = new StreamReader(userFile);
 
-
-        }
     }
 }
