@@ -1,10 +1,12 @@
 Is your country in Eurasia? [is: #n0a]
 - Yes: Does your country have a population greater than 100 million people? [is: #na1a, from: #n0a]
-  - Yes: []
+  - Yes: [see below]
+  - No: Does your country have a population greater than 50 million people? [is: #na1b, from: #n0a]
+    - Yes: [see below]
+    - No: Does your country have a population greater than 25 million people? [is: #na1c, from: #na1b]
 
-## If Country is in Eurasia
-
-- AND population \>100mil (7)  
+### If Country is in Eurasia
+## FROM #na1a
   - Is its national animal a mythical creature?  [is: #naa_mc, from: #na1a]
     - Yes: **Is it Russia?**   [is: #naa_mc1 , from: #naa_mc]
     - No: Is its national animal a tiger?  [is: #naa_mc0 , from: #naa_mc]
@@ -18,8 +20,8 @@ Is your country in Eurasia? [is: #n0a]
             - Yes: **Is it Pakistan?**  
             - No: **Is it  Japan?**  
           - No: **Is it Vietnam?**  
-- AND population \>50mil (9)  
-  - Is its national animal a mythical creature?  
+##  FROM #na1b
+  - Is its national animal a mythical creature?  [is: #, from: #na1b]
     - Yes: But like…is it actually that country’s national animal, or is it the national animal of a country within that country?  
       - Yes: **Is it Germany?**  
       - No: **Is it the United Kingdom (England/Scotland/Wales/Northern Ireland)**   
@@ -28,8 +30,8 @@ Is your country in Eurasia? [is: #n0a]
         - Yes: **Is it South Africa?**  
         - No: **Is it South Korea?**  
       - No: **Is it Iran?**  
-- AND population \>25mil (12)  
-  - Is it landlocked?  
+## FROM #na1c
+  - Is it landlocked?  [is: #, from: #na1c]
     - Yes: Is it “doubly landlocked?”  
       - Yes: **Is it Uzbekistan?**  
       - No: Does its flag have a non-rectangular shape?  
@@ -41,8 +43,8 @@ Is your country in Eurasia? [is: #n0a]
         - Yes: **Is it Malaysia?**  
         - No: **Is it Iraq?**
 
-- AND population \>1.1mil (50)  
-  - Is it landlocked?  
+## FROM #na1d
+  - Is it landlocked? [is: #, from: #na1d]
     - Yes: Is its national animal a mythical creature?   
       - Yes: Does it have a rainforest?  
         - Yes: **Is it Serbia?**  
@@ -62,8 +64,8 @@ Is your country in Eurasia? [is: #n0a]
                     - Yes: **Is it Greece?**  
                     - No: **Is it Belgium?**  
                 - No: **Is it Hong Kong?**  
-- AND population \<1.1mil (16)  
-  - Is it landlocked?  
+## FROM  #na1e
+  - Is it landlocked?  [is: #, from: #na1e]
     - Yes: Is it “doubly landlocked”?  
       - Yes: **Is it Liechtenstein?**  
       - No: Is its national animal a mythical creature?  
@@ -81,7 +83,7 @@ Is your country in Eurasia? [is: #n0a]
 
 ## If Country is in Africa 
 
-- AND population \>100mil (4)  
+## FROM #nb1a  
   - Is it landlocked?  
     - Yes: **Is it Ethiopia?**  
     - No: Does it have one of the largest film industries in the world?  
@@ -89,19 +91,19 @@ Is your country in Eurasia? [is: #n0a]
       - No:  Is it one of the 17 “megadiverse” countries?  
         - Yes: **Is it Democratic Republic of Congo?**  
         - No: **Is it Egypt?**  
-- AND population \>50mil (5)  
+## FROM #nb1b 
   - Is it landlocked?  
     - Yes: **Is it Uganda?**  
     - No: **Is it Kenya?**  
-- AND population \>25mil (9)  
+## FROM #nb1c 
   - Is it landlocked?  
     - Yes: **Is it Niger?**  
     - No: **Is it Algeria?**  
-- AND population \>1.1mil (34)  
+# FROM #nb1d  
   - Is it landlocked?  
     - Yes: **Is it Rwanda?**  
     - No: **Is it Cambodia?**  
-- AND population \<1.1mil (8)  
+## FROM #nb1e
   - **Is it Western Sahara?**
 
 ## If Country is in America
