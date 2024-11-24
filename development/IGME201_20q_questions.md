@@ -5,13 +5,13 @@ Is your country in Eurasia? [is: #n0a]
 ## If Country is in Eurasia
 
 - AND population \>100mil (7)  
-  - Is its national animal a mythical creature?  [is: , from: #na1a]
-    - Yes: **Is it Russia?**  
-    - No: Is its national animal a tiger?  
-      - Yes: Is it one of the 17 “megadiverse” countries?  
+  - Is its national animal a mythical creature?  [is: #naa_mc, from: #na1a]
+    - Yes: **Is it Russia?**   [is: #naa_mc1 , from: #naa_mc]
+    - No: Is its national animal a tiger?  [is: #naa_mc0 , from: #naa_mc]
+      - Yes: Is it one of the 17 “megadiverse” countries? [is: # , from: #naa_mc0]  
         - Yes: **Is it India?**  
         - No: **Is it Bangladesh?**  
-      - No: Is it one of the 17 “megadiverse” countries?  
+      - No: Is it one of the 17 “megadiverse” countries?  [is: # , from: #naa_mc0]
         - Yes: **Is it China?**  
         - No: Does this country have recognized glaciers?  
           - Yes: But does it have…like a lot of glaciers?  
