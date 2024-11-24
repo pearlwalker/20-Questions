@@ -65,45 +65,45 @@ Is your country in Eurasia? [is: #n0a]
                     - No: **Is it Belgium?**  
                 - No: **Is it Hong Kong?**  
 ## FROM  #na1e
-  - Is it landlocked?  [is: #, from: #na1e]
-    - Yes: Is it “doubly landlocked”?  
-      - Yes: **Is it Liechtenstein?**  
-      - No: Is its national animal a mythical creature?  
-        - Yes: **Is it Bhutan?**   
-        - No: Is its official language Catalan?  
-          - Yes: **Is it Andorra?**  
-          - No: Is there anything…unusual about the shape of its flag?  
-            - Yes: **Is it Vatican City/Holy See?**  
-            - No: According to the Köppen climate classification, does this country have an oceanic climate?  
-              - Yes: **Is it Luxembourg?**  
-              - No: **Is it San Marino?**  
-    - No: Does the name of this country begin with the letter ‘M’?  
-      - Yes: **Is it Maldives?**  
-      - No: **Is it Iceland?**
+  - Is it landlocked?  [is: #nae_LL, from: #na1e]
+    - Yes: Is it “doubly landlocked”? [is: #nae_LL1, from: #nae_LL]  
+      - Yes: **Is it Liechtenstein?**  [is: #nae_2LL1, from: #nae_LL1]
+      - No: Is its national animal a mythical creature?  [is: #nae_2LL0, from: #nae_LL1]
+        - Yes: **Is it Bhutan?**   [is: #nae_mc1, from: #nae_2LL0]
+        - No: Is its official language Catalan?  [is: #nae_mc0, from: #nae_2LL0]
+          - Yes: **Is it Andorra?**  [is: #nae_catalan1, from: #nae_mc0]
+          - No: Is there anything…unusual about the shape of its flag?  [is: #nae_catalan0, from: #nae_mc0]
+            - Yes: **Is it Vatican City/Holy See?**  [is: #nae_weirdflag1, from: #nae_catalan0]
+            - No: According to the Köppen climate classification, does this country have an oceanic climate? [is: #nae_weirdflad0, from: #nae_catalan0]  [is: #n, from: #n]
+              - Yes: **Is it Luxembourg?**  [is: #nae_oceanic1, from: #nae_weirdflag0]
+              - No: **Is it San Marino?**  [is: #nae_oceanic0, from: #nae_weirdflag0]
+    - No: Does the name of this country begin with the letter ‘M’?  [is: #nae_LL0, from: #nae_LL]
+      - Yes: **Is it Maldives?**  [is: #nae_m1, from: #nae_LL0]
+      - No: **Is it Iceland?** [is: #nae_m0, from: #nae_LL0]
 
 ### If Country is in Africa 
 ## FROM #nb1a  
-  - Is it landlocked?  
-    - Yes: **Is it Ethiopia?**  
-    - No: Does it have one of the largest film industries in the world?  
-      - Yes: **Is it Nigeria?**  
-      - No:  Is it one of the 17 “megadiverse” countries?  
-        - Yes: **Is it Democratic Republic of Congo?**  
-        - No: **Is it Egypt?**  
+  - Is it landlocked?  [is: #nba_LL, from: #nb1a]
+    - Yes: **Is it Ethiopia?**  [is: #nba_LL1, from: #nba_LL]
+    - No: Does it have one of the largest film industries in the world? [is: #nba_LL0, from: #nba_LL]  
+      - Yes: **Is it Nigeria?**  [is: #nba_film1, from: #nba_LL0]
+      - No:  Is it one of the 17 “megadiverse” countries? [is:nba_film0 #n, from: #nba_LL0]  
+        - Yes: **Is it Democratic Republic of Congo?**  [is: #nba_171, from: #nba_film0]
+        - No: **Is it Egypt?**  [is: #nba_170, from: #nba_film0]
 ## FROM #nb1b 
-  - Is it landlocked?  
-    - Yes: **Is it Uganda?**  
-    - No: **Is it Kenya?**  
+  - Is it landlocked?  [is: #nbb_LL, from: #nb1b]
+    - Yes: **Is it Uganda?**  [is: #nbb_LL1, from: #nbb_LL]
+    - No: **Is it Kenya?**  [is: #nbb_LL0, from: #nbb_LL]
 ## FROM #nb1c 
-  - Is it landlocked?  
-    - Yes: **Is it Niger?**  
-    - No: **Is it Algeria?**  
+  - Is it landlocked?  [is: #nbc_LL, from: #nb1c]
+    - Yes: **Is it Niger?**  [is: #nbc_LL1, from: #nbc_LL]
+    - No: **Is it Algeria?**  [is: #nbc_LL0, from: #nbc_LL]
 # FROM #nb1d  
-  - Is it landlocked?  
-    - Yes: **Is it Rwanda?**  
-    - No: **Is it Cambodia?**  
+  - Is it landlocked?  [is: #nbd_LL, from: #nb1d]
+    - Yes: **Is it Rwanda?**  [is: #nbd_LL1, from: #nbd_LL]
+    - No: **Is it Cambodia?**  [is: #nbd_LL0, from: #nbd_LL]
 ## FROM #nb1e
-  - **Is it Western Sahara?**
+  - **Is it Western Sahara?** [is: #nbe_guess, from: #nb1e]
 
 ### If Country is in America
 ## FROM #nc1a
@@ -137,7 +137,7 @@ Is your country in Eurasia? [is: #n0a]
 
 ## FROM #nd1a  
   - Is its national animal a mythical creature? [is: #nda_mc, from: #nd1a]  
-    - Yes: **Is it Indonesia?**  [is: #nda_mc1, from: #nda_mc][is: #n, from: #n]
+    - Yes: **Is it Indonesia?**  [is: #nda_mc1, from: #nda_mc]
     - No: **Is it the Philippines?**  [is: #nda_mc0, from: #nda_mc] 
 ## FROM #nd1b
   - **Is it Australia?**  [is: #ndb_guess, from: #nd1b]
