@@ -34,6 +34,11 @@ namespace _20_Questions
             Console.WriteLine("Initializing a new game.\n");
             Console.WriteLine("Think about a country and we'll try to guess it: ");
             tree.query();
+            while (playAgain())
+            {
+                Console.WriteLine();
+                tree.query();
+            }
         }
 
         static bool playAgain()

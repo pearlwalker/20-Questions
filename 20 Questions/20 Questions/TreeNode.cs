@@ -89,7 +89,7 @@ using System.Text.Json.Serialization;
 	 */
 	public void query()
 	{
-		if (isQuestion())
+		if (this.isQuestion())
 		{
 			Console.WriteLine(message);
 			Console.Write("Enter 'y' for yes and 'n' for no: ");

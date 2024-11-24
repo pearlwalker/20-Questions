@@ -22,22 +22,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Mac\\Home\\Documents\\GitHub\\20-Questions\\20 Questions\\20 Questions\\Program.cs",
-              "RelativeDocumentMoniker": "20 Questions\\Program.cs",
-              "ToolTip": "C:\\Mac\\Home\\Documents\\GitHub\\20-Questions\\20 Questions\\20 Questions\\Program.cs",
-              "RelativeToolTip": "20 Questions\\Program.cs",
-              "ViewState": "AgIAABwAAAAoCAAAAAARwCMAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-19T13:58:48.282Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
@@ -46,7 +32,7 @@
               "RelativeDocumentMoniker": "20 Questions\\Tree.cs",
               "ToolTip": "C:\\Mac\\Home\\Documents\\GitHub\\20-Questions\\20 Questions\\20 Questions\\Tree.cs",
               "RelativeToolTip": "20 Questions\\Tree.cs",
-              "ViewState": "AgIAADgAAABADAAAAIAbwD4AAABGAAAAAAAAAA==",
+              "ViewState": "AgIAABsAAADAsZmZmRkQwCEAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-24T00:22:13.807Z",
               "IsPinned": true,
@@ -60,10 +46,23 @@
               "RelativeDocumentMoniker": "20 Questions\\TreeNode.cs",
               "ToolTip": "C:\\Mac\\Home\\Documents\\GitHub\\20-Questions\\20 Questions\\20 Questions\\TreeNode.cs",
               "RelativeToolTip": "20 Questions\\TreeNode.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAKAAAAAAAAAA==",
+              "ViewState": "AgIAAHsAAAAAk5mZmZkPwGUAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-20T17:33:59.187Z",
               "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Mac\\Home\\Documents\\GitHub\\20-Questions\\20 Questions\\20 Questions\\Program.cs",
+              "RelativeDocumentMoniker": "20 Questions\\Program.cs",
+              "ToolTip": "C:\\Mac\\Home\\Documents\\GitHub\\20-Questions\\20 Questions\\20 Questions\\Program.cs",
+              "RelativeToolTip": "20 Questions\\Program.cs",
+              "ViewState": "AgIAABoAAADgsJmZmRkmwCAAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T13:58:48.282Z",
               "EditorCaption": ""
             }
           ]
