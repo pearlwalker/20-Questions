@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Github_Repos\\20-Questions\\20 Questions\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{69FC447F-79BA-432F-A882-EA64F3BEC4DE}|20 Questions\\20 Questions.csproj|c:\\github_repos\\20-questions\\20 questions\\20 questions\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{69FC447F-79BA-432F-A882-EA64F3BEC4DE}|20 Questions\\20 Questions.csproj|solutionrelative:20 questions\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{69FC447F-79BA-432F-A882-EA64F3BEC4DE}|20 Questions\\20 Questions.csproj|c:\\github_repos\\20-questions\\20 questions\\20 questions\\tree.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{69FC447F-79BA-432F-A882-EA64F3BEC4DE}|20 Questions\\20 Questions.csproj|solutionrelative:20 questions\\tree.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{69FC447F-79BA-432F-A882-EA64F3BEC4DE}|20 Questions\\20 Questions.csproj|c:\\github_repos\\20-questions\\20 questions\\20 questions\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{69FC447F-79BA-432F-A882-EA64F3BEC4DE}|20 Questions\\20 Questions.csproj|solutionrelative:20 questions\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{69FC447F-79BA-432F-A882-EA64F3BEC4DE}|20 Questions\\20 Questions.csproj|c:\\github_repos\\20-questions\\20 questions\\20 questions\\treenode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -22,17 +22,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Tree.cs",
               "DocumentMoniker": "C:\\Github_Repos\\20-Questions\\20 Questions\\20 Questions\\Tree.cs",
               "RelativeDocumentMoniker": "20 Questions\\Tree.cs",
-              "ToolTip": "C:\\Github_Repos\\20-Questions\\20 Questions\\20 Questions\\Tree.cs",
-              "RelativeToolTip": "20 Questions\\Tree.cs",
-              "ViewState": "AgIAAEcAAAAAAAAAAAAIwFkAAAAAAAAAAAAAAA==",
+              "ToolTip": "C:\\Github_Repos\\20-Questions\\20 Questions\\20 Questions\\Tree.cs*",
+              "RelativeToolTip": "20 Questions\\Tree.cs*",
+              "ViewState": "AgIAABAAAAAAAAAAAAAgwCAAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-24T00:22:13.807Z",
               "IsPinned": true,
@@ -57,13 +57,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Github_Repos\\20-Questions\\20 Questions\\20 Questions\\Program.cs",
               "RelativeDocumentMoniker": "20 Questions\\Program.cs",
               "ToolTip": "C:\\Github_Repos\\20-Questions\\20 Questions\\20 Questions\\Program.cs",
               "RelativeToolTip": "20 Questions\\Program.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAQwB8AAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAkwCgAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-19T13:58:48.282Z",
               "EditorCaption": ""
