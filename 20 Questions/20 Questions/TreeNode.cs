@@ -133,6 +133,7 @@ using System.Text.Json.Serialization;
 		{
 			this.noNode = new TreeNode(this.message,this.name,"no",this.name+"no");
 			this.yesNode = new TreeNode(userObject, this.name, "yes", this.name + "yes");
+			
 		} else
 		{
 			this.yesNode = new TreeNode(this.message,this.name, "yes", this.name + "yes");
@@ -140,6 +141,7 @@ using System.Text.Json.Serialization;
 		};
 		Console.WriteLine("Thank you my knowledge has been increased");
 		setMessage(userQuestion);
+		
 	}
 	/// <summary>
 	/// Recursivly print outs all of the nodes in the tree starting with the root node then yes nodes to no nodes
@@ -147,7 +149,7 @@ using System.Text.Json.Serialization;
 	/// <param name="sw"> Is a string writer object</param>
 	public void printNode(StreamWriter sw)
 	{
-		sw.WriteLine($"{this.message},{this.name},{this.parentName},{this.edgeType}");
+        sw.WriteLine($"{this.message},{this.name},{this.parentName},{this.edgeType}");
 		if (yesNode != null)
 		{
 			yesNode.printNode(sw);

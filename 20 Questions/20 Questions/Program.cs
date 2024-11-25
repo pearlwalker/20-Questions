@@ -19,11 +19,7 @@ namespace _20_Questions
             //call tree.query()(?)
             startNewGame();
             
-            while (playAgain())
-            {
-                Console.WriteLine();
-                tree.query();
-            }
+        
         }
 
         //When the game starts we need to create a binary tree to hold the computer's knowledge. A new game needs one question and two objects and is executed in the startNewGame() method
@@ -44,7 +40,7 @@ namespace _20_Questions
         static bool playAgain()
         {
             Console.Write("\nPlay Another Game?");
-            char inputCharacter = Console.ReadLine().ElementAt(0);
+            Char inputCharacter = Console.ReadLine().ElementAt(0);
             inputCharacter = Char.ToLower(inputCharacter);
             while (inputCharacter != 'y' && inputCharacter != 'n')
             {
