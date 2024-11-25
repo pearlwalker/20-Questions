@@ -18,7 +18,7 @@ namespace _20_Questions
         {
             //Start a new game
             startNewGame();
-
+            tree.printTree();
 
         }
 
@@ -31,14 +31,14 @@ namespace _20_Questions
             Console.WriteLine("Think about a country and we'll try to guess it: ");
             tree.query();
 
-            /*
+            
             while (playAgain())
             {
                 Console.WriteLine();
                 tree.query();
             }
-        }*/
-            /*
+        }
+            
             static bool playAgain()
             {
                 Console.Write("\nPlay Another Game?");
@@ -59,8 +59,8 @@ namespace _20_Questions
                     return false;
                 }
             }
-    */
+    
 
-        }
+        
     }
 }

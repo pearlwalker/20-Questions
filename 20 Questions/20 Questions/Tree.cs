@@ -30,7 +30,7 @@ public class Tree
 	{
 		
         // make a stream reader object out of it
-        StreamReader sr = new StreamReader("tree.txt");
+        StreamReader sr = new StreamReader(@"..\..\tree.txt");
 		string line = sr.ReadLine();
 		//Split the date into parts, and call them In variables.
 		while (line != null) {
