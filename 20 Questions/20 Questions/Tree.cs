@@ -81,7 +81,7 @@ public class Tree
 	//Call a function to store new tree data.
 	public void printTree()
 	{
-        StreamWriter sw = new StreamWriter("tree.txt", true);
+        StreamWriter sw = new StreamWriter(@"..\..\tree.txt", false);
         rootNode.printNode(sw);
         sw.Close();
     }
