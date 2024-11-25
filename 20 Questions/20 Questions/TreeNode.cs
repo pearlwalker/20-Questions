@@ -80,7 +80,7 @@ using System.Text.Json.Serialization;
 		{
 			inputCharacter = Console.ReadLine().ElementAt(0);
 			inputCharacter = Char.ToLower(inputCharacter);
-            Console.Write("Enter 'y' for yes and 'n' for no: ");
+            //Console.Write("Enter 'y' for yes and 'n' for no: ");
         }
 		return inputCharacter;
 	}
@@ -93,7 +93,7 @@ using System.Text.Json.Serialization;
 		if (this.isQuestion())
 		{//Ask a question and prompt for user input.
 			Console.WriteLine(message);
-			//Console.Write("Enter 'y' for yes and 'n' for no: ");
+			Console.Write("Enter 'y' for yes and 'n' for no: ");
 			char input = getYesOrNo();
 			if (input == 'y')
 			{//Prompt yes node

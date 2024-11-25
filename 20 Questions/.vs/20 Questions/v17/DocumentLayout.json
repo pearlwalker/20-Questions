@@ -42,6 +42,10 @@
               "IsPinned": true
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "tree.txt",
@@ -55,10 +59,6 @@
               "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "TreeNode.cs",
@@ -66,7 +66,7 @@
               "RelativeDocumentMoniker": "20 Questions\\TreeNode.cs",
               "ToolTip": "C:\\Users\\olivi\\Documents\\GitHub\\20-Questions\\20 Questions\\20 Questions\\TreeNode.cs",
               "RelativeToolTip": "20 Questions\\TreeNode.cs",
-              "ViewState": "AgIAAEcAAAAAAAAAAAAqwFIAAAAOAAAAAAAAAA==",
+              "ViewState": "AgIAAEQAAAAAAAAAAAAqwFIAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-20T17:33:59.187Z",
               "EditorCaption": ""
