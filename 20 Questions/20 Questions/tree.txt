@@ -1,11 +1,11 @@
-Is your country in Eurasia,n0a,,
-Does your country have a population greater than 100 million people,na1a,n0a,yes
-Is it china?,naa_mc,na1a,yes
+Is your country in Eurasia?,n0a,,
+Does your country have a population greater than 100 million people?,na1a,n0a,yes
+Is it China?,naa_mc,na1a,yes
 Does your country have a population greater than 50 million people?,na1b,na1a,no
 Is its national animal a mythical creature?,nab_mc,na1b,yes
 But like…is it actually that country’s national animal or is it the national animal of a country within that country?,nab_mc1,nab_mc,yes
 Is it Germany?,nab_mcfr1,nab_mc1,yes
-Is it the United Kingdom (England/Scotland/Wales/Northern Ireland),nab_mcfr0,nab_mc1,no
+Is it the United Kingdom (England/Scotland/Wales/Northern Ireland)?,nab_mcfr0,nab_mc1,no
 Is there one of the cardinal directions (North/East/South/West) in the name of this country?,nab_mc0,nab_mc,no
 Did this country operate under Apartheid?,nab_NESW1,nab_mc0,yes
 Is it South Africa?,nab_apartheid1,nab_NESW1,yes
@@ -16,7 +16,7 @@ Is it Nepal?,nac_LL,na1c,yes
 Does your country have a population greater than 1.1 million people?,na1d,na1c,no
 Is it Hungray?,nad_LL,na1d,yes
 Is your country in Africa?,n0b,n0a,no
-Does your country have a population greater than 100 million people,nb1a,n0b,yes
+Does your country have a population greater than 100 million people?,nb1a,n0b,yes
 Is it Ethiopie?,nba_LL,nb1a,yes
 Does your country have a population greater than 50 million people?,nb1b,nb1a,no
 Is it Kenya?,nbb_LL,nb1b,yes
@@ -25,7 +25,7 @@ Is it Niger?,nbc_LL,nb1c,yes
 Does your country have a population greater than 1.1 million people?,nb1d,nb1c,no
 Is it Rwanda?,nbd_LL,nb1d,yes
 Is your country in Americas?,n0c,n0b,no
-Does your country have a population greater than 100 million people,nd1a,n0c,yes
+Does your country have a population greater than 100 million people?,nd1a,n0c,yes
 Is it Indonesia?,nda_mc,nd1a,yes
 Does your country have a population greater than 50 million people?,nd1b,nd1a,no
 Is it Australia?,ndb_guess,nd1b,yes

@@ -80,7 +80,7 @@ using System.Text.Json.Serialization;
 		{
 			inputCharacter = Console.ReadLine().ElementAt(0);
 			inputCharacter = Char.ToLower(inputCharacter);
-            Console.Write("Enter 'y' for yes and 'n' for no: ");
+            //Console.Write("Enter 'y' for yes and 'n' for no: ");
         }
 		return inputCharacter;
 	}
