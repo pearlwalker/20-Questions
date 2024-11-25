@@ -19,18 +19,20 @@ public class Tree
         loadTree(); 
 			
 	}
-
+	//Call the query function of the root node
 	public void query()
 	{
 		rootNode.query();
 	}
 
+	//Load data into the tree.
 	public void loadTree()
 	{
 		
         // make a stream reader object out of it
         StreamReader sr = new StreamReader("tree.txt");
 		string line = sr.ReadLine();
+		//Split the date into parts, and call them In variables.
 		while (line != null) {
 		string[] parts = line.Split(",");
 		string message= parts[0];
@@ -76,6 +78,7 @@ public class Tree
 	public void removeNode(string name)
     {
     }
+	//Call a function to store new tree data.
 	public void printTree()
 	{
         StreamWriter sw = new StreamWriter("tree.txt", true);

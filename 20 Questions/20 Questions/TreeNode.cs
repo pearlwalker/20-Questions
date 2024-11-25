@@ -5,7 +5,7 @@ using System.Text;
 using System.IO;
 using System.Text.Json.Serialization;
 
-
+//Declare Tree
 [Serializable] class TreeNode
 {
 	string message; //holds the question or answer
@@ -90,23 +90,25 @@ using System.Text.Json.Serialization;
 	public void query()
 	{
 		if (this.isQuestion())
-		{
+		{//Ask a question and prompt for user input.
 			Console.WriteLine(message);
 			Console.Write("Enter 'y' for yes and 'n' for no: ");
 			char input = getYesOrNo();
 			if (input == 'y')
-			{
+			{//Prompt yes node
                 this.yesNode.query();
 			} else
-			{
+			{//Prompt no node
                 this.noNode.query();
 			}
 		} else
-		{
+		{//Guess the answer
 			this.onQueryObject();
 		}
 	}
 
+	/*Ask the user if this is the country they were thinking of.
+	 * If yes,Computer wins.If not,Prompt the user to update the tree.*/
 	public void onQueryObject()
 	{
 		Console.WriteLine("Are you thinking of a(n) " + this.message + "?");
@@ -120,7 +122,8 @@ using System.Text.Json.Serialization;
 			updateTree();
 		}
 	}
-
+	/*If user wins, prompt them To enter the country they were thinking of.
+	 * Add question And Add it to the tree note.*/
 	private void updateTree()
 	{
 		Console.Write("You win! What were you thinking of?");

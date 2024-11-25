@@ -10,16 +10,16 @@ namespace _20_Questions
 {
     internal class Program
     {
-        static Tree  tree = new Tree();
+        //Declare a new tree
+        static Tree tree = new Tree();
 
 
         static void Main(string[] args)
         {
-            //hard code start of tree(?)
-            //call tree.query()(?)
+            //Start a new game
             startNewGame();
-            
-        
+
+
         }
 
         //When the game starts we need to create a binary tree to hold the computer's knowledge. A new game needs one question and two objects and is executed in the startNewGame() method
@@ -30,34 +30,37 @@ namespace _20_Questions
             Console.WriteLine("Initializing a new game.\n");
             Console.WriteLine("Think about a country and we'll try to guess it: ");
             tree.query();
+
+            /*
             while (playAgain())
             {
                 Console.WriteLine();
                 tree.query();
             }
-        }
-
-        static bool playAgain()
-        {
-            Console.Write("\nPlay Another Game?");
-            Char inputCharacter = Console.ReadLine().ElementAt(0);
-            inputCharacter = Char.ToLower(inputCharacter);
-            while (inputCharacter != 'y' && inputCharacter != 'n')
+        }*/
+            /*
+            static bool playAgain()
             {
-                Console.WriteLine("Incorrect input please enter again: ");
-                inputCharacter = Console.ReadLine().ElementAt(0);
+                Console.Write("\nPlay Another Game?");
+                Char inputCharacter = Console.ReadLine().ElementAt(0);
                 inputCharacter = Char.ToLower(inputCharacter);
+                while (inputCharacter != 'y' && inputCharacter != 'n')
+                {
+                    Console.WriteLine("Incorrect input please enter again: ");
+                    inputCharacter = Console.ReadLine().ElementAt(0);
+                    inputCharacter = Char.ToLower(inputCharacter);
+                }
+                if (inputCharacter == 'y')
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
             }
-            if (inputCharacter == 'y')
-            {
-                return true;
-            }
-            else
-            {
-                return false;
-            }
+    */
+
         }
-
-
     }
 }
